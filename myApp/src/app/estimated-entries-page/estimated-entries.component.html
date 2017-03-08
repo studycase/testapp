@@ -1,0 +1,93 @@
+<div class="container-fluid">
+<div class="container">
+   <div class="spacer10">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-3"><img src="assets/images/back.gif" class="img-responsive goback" alt="title"></div>
+                <div><span class="gotext">BACK TO DASHBOARD</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 entries-title">
+              <span>ESTIMATED ENTRIES</span>
+            </div>
+            <div class="col-md-3 edit-btn">
+              <span>EDIT ESTIMATED ENTRIES</span>
+            </div>
+          </div>
+        </div>
+    </div><div class="spacer10">&nbsp;</div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+          &nbsp;
+          </div>
+        <div class="col-md-4">
+          45 syllabuses    I    Sort by:  <span class="sort">Subject A-Z</span>&nbsp;<span class="glyphicon glyphicon-triangle-bottom sort" aria-hidden="true"></span>
+        </div>
+        <div class="col-md-4">
+          <div class="row user-friendly">
+            <div class="col-md-2">
+              <img src="assets/images/search.png" class="img-responsive" alt="title">
+            </div>
+            <div class="col-md-2">
+              <img src="assets/images/sort.png" class="img-responsive" alt="title">
+            </div>
+            <div class="col-md-2">
+              <img src="assets/images/download.png" class="img-responsive" alt="title">
+            </div>
+            <div class="col-md-2">
+              <img src="assets/images/print.png" class="img-responsive" alt="title">
+            </div>
+            <div class="col-md-2">
+              <img src="assets/images/report.png" class="img-responsive" alt="title">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="spacer10">&nbsp;</div>
+    <div class="row entries-list" *ngFor="let list of entries; let i = index">
+      <div class="col-md-1 entries-id">
+       {{list.entries_id}}
+      </div>
+      <div class="col-md-8 entries-desc">
+         <div class="syb-title" *ngIf="i === 0">
+           <a [routerLink]="['/syllabusDetails']">{{list.entries_desc}}</a>
+         </div>
+         <div class="syb-title" *ngIf="i > 0">
+           {{list.entries_desc}}
+         </div>
+         <div class="syb-option">
+           Options: <span class="option" *ngFor="let options of list.entries_option"> {{options}} </span>
+         </div>
+      </div>
+      <div class="col-md-1 entries-code">
+        {{list.entries_code}}
+      </div>
+      <div class="col-md-2 entries-status">
+        {{list.entries_status}}
+      </div>
+    </div>
+    <div class="spacer10">&nbsp;</div><hr>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="row">
+                <div class="col-md-3"><img src="assets/images/back.gif" class="img-responsive goback" alt="title"></div>
+                <div><span class="gotext">BACK TO DASHBOARD</span></div>
+              </div>
+            </div>
+            <div class="col-md-6 entries-title">
+              <span>&nbsp;</span>
+            </div>
+            <div class="col-md-3 edit-btn">
+              <span>EDIT ESTIMATED ENTRIES</span>
+            </div>
+          </div>
+        </div>
+    </div><div class="spacer10">&nbsp;</div>
+</div>
+</div>

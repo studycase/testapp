@@ -1,0 +1,50 @@
+{
+	"data": {
+		"syllabus_entries": [{
+			"entries_title": "Art & Design - 9704",
+			"entries_option": [
+				"d",
+				"a",
+				"b",
+				"c",
+				"ed"
+			]
+		}],
+		"syllabus_details": [{
+			"option_title": "a",
+			"option_syllabus": [
+				"Controlled Test",
+				"Coursework A ",
+				"Coursework B"
+			]
+		}, {
+			"option_title": "b",
+			"option_syllabus": [
+				"Controlled Test",
+				"Coursework c ",
+				"Coursework d"
+			]
+		}, {
+			"option_title": "b",
+			"option_syllabus": [
+				"Controlled Test",
+				"Coursework c ",
+				"Coursework d"
+			]
+		}, {
+			"option_title": "w",
+			"option_syllabus": [
+				"Controlled Test",
+				"Coursework c ",
+				"Coursework d"
+			]
+		}, {
+			"option_title": "b",
+			"option_syllabus": [
+				"Controlled Test",
+				"Coursework c ",
+				"Coursework d"
+			]
+		}]
+	}
+}

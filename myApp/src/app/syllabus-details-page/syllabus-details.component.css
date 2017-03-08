@@ -1,0 +1,107 @@
+h5 {
+    text-transform: uppercase;
+}
+.syb-detail {
+    background-color: #666566;
+    height: 110px;
+}
+.syb-detail>div {
+    color: #fff;
+}
+.padTop2 {
+    padding-top: 2%; 
+}
+.syb-img-border {
+    border-radius: 50%;
+    border: 1px solid #666566;
+    width: 72px;
+    height: 72px;
+    margin-left: 15px;
+}
+.img-width {
+    margin-top: 12px;   
+}
+.syb-title{
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    color: #000000;
+    font-size: 28px;
+}  
+
+.user-friendly img {
+    width: 25px;
+    height: 25px;
+}
+.user-friendly div {
+    border-right: 1px solid #e4e4e4;
+}
+.user-friendly div:last-child {
+    border-right: none;
+}
+.overTab>li>a {
+    border-radius: 15px 15px 0px 0px !important;
+}
+.overTab>li.active>a {
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial' !important;
+    font-weight: 700 !important;
+    color: #333 !important;
+}
+.com {
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #515151;
+}
+#syllabus h5 {
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+    font-weight: 700;
+}
+
+.syb-value p {
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    color: #666666;
+}
+.separator {
+    border-right: 1px solid #e4e4e4;
+}
+.pdf-list img {
+    width: 48px;
+    height: 51px;
+}
+.pdf-list div.title {
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial';
+    font-weight: 700;
+    color: #199ED8;
+    text-transform: uppercase;
+}
+.pdf-list div.size {
+    font-family: 'Arial Bold', 'Arial';
+    font-weight: 400;
+    color: #515151;
+}
+.padLeft40 {
+    padding-left: 40px;
+}
+.row-bottom {
+    margin-bottom: 10px;
+}
+.no-gutter {
+    padding-right:0;
+    padding-left:0;
+}
+.no-gutter-right {
+    padding-right:0;
+}
+.no-gutter-left {
+     padding-left:0;
+}
+.syb-option span {
+    text-transform: uppercase;
+    border-right: 1px solid #e4e4e4;
+    padding: 5px;
+}
+.syb-option span:last-child {
+    border-right: none;
+}

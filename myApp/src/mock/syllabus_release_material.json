@@ -1,0 +1,20 @@
+{
+	"data": {
+		"release_material": [{
+			"release_url": "",
+			"release_title": "FULL SYLLABUS DETAILS",
+			"release_size": "24 MB",
+			"release_type": "pdf"
+		}, {
+			"release_url": "",
+			"release_title": "Market",
+			"release_size": "24 MB",
+			"release_type": "doc"
+		}, {
+			"release_url": "",
+			"release_title": "Market&Spec",
+			"release_size": "24 MB",
+			"release_type": "xls"
+		}]
+	}
+}
