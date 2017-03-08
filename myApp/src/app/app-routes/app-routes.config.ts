@@ -5,7 +5,7 @@ import { SyllabusDetailsComponent } from '../syllabus-details-page/syllabus-deta
 
 export const routes: Routes = [
     //{ path: '',   redirectTo: '',  pathMatch: 'full'  },
-    //{ path : '', component : AppComponent}, 
+    //{ path : 'home', component : AppComponent}, 
     { path : 'estimatedEntries', component : EstimatedEntriesComponent},
     { path : 'syllabusDetails', component : SyllabusDetailsComponent}
 ];
