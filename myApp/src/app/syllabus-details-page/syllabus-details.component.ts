@@ -9,7 +9,7 @@ declare  var $:any;
   moduleId: module.id,
   selector: 'app-syllabus-details',
   templateUrl: 'syllabus-details.component.html',
-  styleUrls: ['syllabus-details.component.css']
+  styleUrls: ['syllabus-details.component.scss']
 })
 
 export class SyllabusDetailsComponent implements OnInit {
@@ -38,9 +38,9 @@ export class SyllabusDetailsComponent implements OnInit {
     
   }
   
-  tabClick(e) {
-    e.preventDefault();
-    $(e.target).tab('show');
-  }
+  //tabClick(e) {
+    //e.preventDefault();
+    //$(e.target).tab('show');
+ // }
   
 }

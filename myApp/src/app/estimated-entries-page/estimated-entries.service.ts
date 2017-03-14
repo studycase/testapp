@@ -11,7 +11,7 @@ export class EstimatedEntriesService {
     constructor(public http: Http) {}
     
     getEntries() : Observable<any> {
-     return this.http.get('https://ang-2app-kkk6020.c9users.io/src/mock/estimated_entries.json')
+     return this.http.get('mock/estimated_entries.json')
                      .map((res:Response) => res.json())
                      .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
     }

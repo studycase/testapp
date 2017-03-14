@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row syb-detail">
-    <div class="col-md-12 col-xs-12 text-center padTop2"><h3>SYLLABUS DETAILS</h3></div>
+    <div class="col-md-12 col-xs-12 text-center padTop2"><h4>{{ 'SYLLABUS_DETAILS' | translate }}</h4></div>
   </div>
   <div class="spacer10">&nbsp;</div>
   <div class="row syb-col">
-    <div class="col-md-2 syb-img-border">
-      <img src="assets/images/art.png" class="img-responsive img-width" alt="title">
+    <div class="col-md-0 syb-img-border">
+      <img src="assets/images/art.png" class="img-fluid mx-auto d-block" alt="title">
     </div>
     <div class="col-md-10">
       <div class="syb-title" *ngFor="let title of syllabus_entries">
@@ -16,49 +16,44 @@
       </div>
     </div>
   </div>
-  <div class="row user-friendly pull-right">
-    <div class="col-md-4">
-      <img src="assets/images/download.png" class="img-responsive" alt="title">
+  <div class="row">
+    <div class="col-md-3">&nbsp;</div>
+    <div class="col-md-9">
+    <div class="row user-friendly float-right">
+      <div class="col-md-4">
+        <img alt="title" class="img-fluid" src="assets/images/download.png">
+      </div>
+      <div class="col-md-4">
+        <img alt="title" class="img-fluid" src="assets/images/print.png">
+      </div>
+      <div class="col-md-4">
+        <img alt="title" class="img-fluid" src="assets/images/report.png">
+      </div>
     </div>
-    <div class="col-md-4">
-      <img src="assets/images/print.png" class="img-responsive" alt="title">
-    </div>
-    <div class="col-md-4">
-      <img src="assets/images/report.png" class="img-responsive" alt="title">
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
-        <ul class="nav nav-tabs overTab">
-          <li class="active">
-            <a data-toggle="tab" (click)='tabClick($event)' href="#syllabus">SYLLABUS</a>
-          </li>
-          <li>
-            <a data-toggle="tab" (click)='tabClick($event)' href="#prelease">PRE-RELEASE MATERIALS</a>
-          </li>
-        </ul>
-        <div class="tab-content">
-            <div id="syllabus" class="tab-pane fade in active">
+    <ngb-tabset>
+      <ngb-tab title="SYLLABUS">
+        <template ngbTabContent>
+          <div id="tab-views">
               <div class="spacer10">&nbsp;</div>
                 <div class="row col-md-12">
                   <p class="com">AT A GLANCE</p>
                 </div>
                 <div class="row">
                   <div class="col-md-8 separator">
-                    <div class="row col-md-5" *ngFor="let details of syllabus_details; let i = index">
-                       <div [ngClass]="{'pull-right': i%2}">
+                    <div class="row col-md-5" *ngFor="let details of syllabus_details; let i = index; let odd = odd; let even = even;" [ngClass]="{ floatright: odd, floatleft: even }">
+                       <div>
                          <div>
-                           <h5>Option {{details.option_title}}</h5>
+                           <h6>Option {{details.option_title}}</h6>
                          </div>
                          <div class="syb-value">
                             <p *ngFor="let lists of details.option_syllabus">{{lists}}</p>
                          </div>
                        </div>
                     </div> 
-                    
-                  </div>
-                  <div class="col-md-1">
-                    &nbsp;
                   </div>
                   <div class="col-md-4 padLeft40">
                     <div>
@@ -66,7 +61,7 @@
                     </div>
                     <div class="row pdf-list row-bottom" *ngFor="let moredetails of syllabus_pdf">
                       <div class="col-md-3 no-gutter-right">
-                        <img src="assets/images/pdf.png" class="img-responsive" alt="title">
+                        <img src="assets/images/pdf.png" class="img-fluid" alt="title">
                       </div>
                       <div class="col-md-8 no-gutter-left">
                         <div class="title">{{moredetails.pdf_title}}</div>
@@ -76,13 +71,17 @@
                   </div>
                 </div>
             </div>
-            <div id="prelease" class="tab-pane fade">
-               <div class="spacer10">&nbsp;</div>
+        </template>
+      </ngb-tab>
+      <ngb-tab title="PRE-RELEASE MATERIALS">
+        <template ngbTabContent>
+          <div id="tab-views">
+            <div class="spacer10">&nbsp;</div>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="row pdf-list row-bottom" *ngFor="let release of syllabus_release_material">
                       <div class="col-md-1 no-gutter-right">
-                        <img src="assets/images/{{release.release_type}}.png" class="img-responsive" alt="title">
+                        <img src="assets/images/{{release.release_type}}.png" class="img-fluid" alt="title">
                       </div>
                       <div class="col-md-8 no-gutter-left">
                         <div class="title">{{release.release_title}}</div>
@@ -92,7 +91,9 @@
                   </div>
                 </div>
             </div>
-        </div>
+        </template>
+      </ngb-tab>
+    </ngb-tabset>
     </div>
   </div>
 </div>

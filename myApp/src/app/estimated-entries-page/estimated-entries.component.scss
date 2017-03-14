@@ -16,37 +16,42 @@
     color: #327FC6;
 }
 .entries-title {
+    
     text-align: center;
+    span {
+        font-size: 18px;
+    }
 }
-.entries-title span {
-    font-size: 18px;
-}
-
 .edit-btn {
+    
     background-color: #327FC6;
     text-align: center;
     padding: 12px;
-}
-.edit-btn span {
-   font-family: 'ArialMT', 'Arial';
-    font-weight: 400;
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
+    span {
+        font-family: 'ArialMT', 'Arial';
+        font-weight: 400;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+    }
 }
 .sort {
     color: #199ED8;
 }
-.user-friendly img {
-    width: 25px;
-    height: 25px;
+.user-friendly {
+    
+    img {
+        width: 25px;
+        height: 25px;
+    }
+    div {
+        border-right: 1px solid #666666;
+    }
+    div:last-child {
+        border-right: none;
+    }
 }
-.user-friendly div {
-    border-right: 1px solid #666666;
-}
-.user-friendly div:last-child {
-    border-right: none;
-}
+
 .entries-list {
     padding: 20px;
     margin-bottom: 15px;
@@ -62,17 +67,17 @@
 .entries-id {
     font-size: 20px;
 }
-.entries-desc .syb-title {
-    font-size:14px;
-    color:#199ED8;
-    margin-bottom: 5px;
-}
+
 .entries-desc {
+    
     border-left: 1px solid #e4e4e4;
+    .syb-title {
+        font-size:14px;
+        color:#199ED8;
+        margin-bottom: 5px;
+    }
 }
-.syb-option {
-   font-size:12px;  
-}
+
 .entries-code {
     font-size: 20px;
     color: #666666;
@@ -86,11 +91,15 @@
     line-height: 24px;
     text-transform: uppercase;
 }
-.syb-option span {
-    text-transform: uppercase;
-    border-right: 1px solid #e4e4e4;
-    padding: 5px;
-}
-.syb-option span:last-child {
-    border-right: none;
+.syb-option {
+    
+    font-size:12px; 
+    span {
+        text-transform: uppercase;
+        border-right: 1px solid #e4e4e4;
+        padding: 5px;
+    }
+    span:last-child {
+        border-right: none;
+    }
 }

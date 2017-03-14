@@ -2,7 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { Http, HttpModule } from '@angular/http';
+
+/* boostrap 4 */
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+/* lang i18n */
+import { TranslateModule, TranslateLoader } from 'ng2-translate';
+import { createTranslateLoader } from './lang.creator';
 
 /* Import app-routes */
 import { routes } from './app-routes/app-routes.config';
@@ -16,6 +23,7 @@ import { SyllabusDetailsComponent } from './syllabus-details-page/syllabus-detai
 import { EstimatedEntriesService } from './estimated-entries-page/estimated-entries.service';
 import { SyllabusDetailsService } from './syllabus-details-page/syllabus-details.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +34,13 @@ import { SyllabusDetailsService } from './syllabus-details-page/syllabus-details
     BrowserModule,
     FormsModule,
     HttpModule,
+    NgbModule.forRoot(),
     RouterModule.forRoot(routes),
+    TranslateModule.forRoot({
+            provide: TranslateLoader,
+            useFactory: (createTranslateLoader),
+            deps: [Http]
+    })
   ], 
   providers: [EstimatedEntriesService,SyllabusDetailsService],
   bootstrap: [AppComponent]
