@@ -9,7 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 /* lang i18n */
 import { TranslateModule, TranslateLoader } from 'ng2-translate';
-import { createTranslateLoader } from './lang.creator';
+import { createTranslateLoader } from './shared/translate/translate.component';
 
 /* Import app-routes */
 import { routes } from './app-routes/app-routes.config';

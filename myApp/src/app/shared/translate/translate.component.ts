@@ -7,5 +7,5 @@ import { Http } from '@angular/http';
  */
 
 export function createTranslateLoader(http: Http) {
-    return new LocalizableTranslateStaticLoader(http, './lang/i18n', '.json');
+    return new LocalizableTranslateStaticLoader(http, '../assets/translate/i18n', '.json');
 }

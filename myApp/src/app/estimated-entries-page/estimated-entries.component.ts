@@ -10,7 +10,6 @@ import { EstimatedEntriesService } from './estimated-entries.service';
  */
  
 @Component({
-  moduleId: module.id,
   selector: 'app-estimated-entries-page',
   templateUrl: 'estimated-entries.component.html',
   styleUrls: ['estimated-entries.component.scss']

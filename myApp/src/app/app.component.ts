@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateService } from 'ng2-translate';
 
 /**
- * The App Component
+ * The App Component 
  *
  */
  
@@ -18,6 +18,9 @@ export class AppComponent {
   public supportedLanguages: any[];
   public languageList: any;
   
+  public defaultLang: string;
+  public langValue: string;
+  
   constructor(public translate: TranslateService) {  
         //translate.setDefaultLang('lang-en');
         //translate.use('lang-en');
@@ -26,11 +29,19 @@ export class AppComponent {
   ngOnInit() {
     
     this.languageList = [
-      { text: 'English', value: 'lang-en' },
-      { text: 'français', value: 'lang-fr' }
+      { text: 'English',  value: 'lang-en' },
+      { text: 'Français', value: 'lang-fr' },
+      { text: 'Deutsche', value: 'lang-gr' }
     ];
     
-    this.setLang('lang-en');
+    this.defaultLang = 'lang-en';
+    this.langValue = localStorage.getItem('langValue');
+    
+    console.log(this.langValue);
+    if(!this.langValue)
+      this.setLang(this.defaultLang);
+    else
+      this.setLang(this.langValue);
   }
     
   isCurrentLang(lang: string) {
@@ -38,8 +49,9 @@ export class AppComponent {
   }
     
   setLang(lang: string) {
+    localStorage.setItem('langValue', lang);
     this.translate.setDefaultLang(lang);
-    // set default;
+    //set default;
     this.translate.use(lang);
   }
   

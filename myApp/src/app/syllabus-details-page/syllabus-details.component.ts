@@ -6,7 +6,6 @@ import { SyllabusDetailsService } from './syllabus-details.service';
 declare  var $:any;
 
 @Component({
-  moduleId: module.id,
   selector: 'app-syllabus-details',
   templateUrl: 'syllabus-details.component.html',
   styleUrls: ['syllabus-details.component.scss']
