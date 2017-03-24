@@ -48,26 +48,28 @@
         </div>
     </div>
     <div class="spacer10">&nbsp;</div>
+    
     <div class="row entries-list" *ngFor="let list of entries; let i = index">
       <div class="col-md-1 entries-id">
-       {{list.entries_id}}
+       <!--{{list.entries_id}}-->{{ list.Product.Achievable.referenceId }}
       </div>
       <div class="col-md-8 entries-desc">
          <div class="syb-title" *ngIf="i === 0">
-           <a [routerLink]="['/syllabusDetails']">{{list.entries_desc}}</a>
+           <a [routerLink]="['/syllabusDetails']"><!--{{list.entries_desc}}-->{{ list.Product.Achievable.name }}</a>
          </div>
          <div class="syb-title" *ngIf="i > 0">
-           {{list.entries_desc}}
+          <!-- {{list.entries_desc}}-->{{ list.Product.Achievable.name }}
          </div>
          <div class="syb-option">
-           Options: <span class="option" *ngFor="let options of list.entries_option"> {{options}} </span>
+           <!--list.entries_option-->
+           Options: <span class="option" *ngFor="let options of list.Product.Option"> {{ options.EntryCombination.entryCombinationCode }} </span>
          </div>
       </div>
-      <div class="col-md-1 entries-code">
-        {{list.entries_code}}
+      <div class="col-md-1 entries-code">245
+        <!--{{list.entries_code}}<span class="option" *ngFor="let optionss of list.Product.Option"> {{ optionss.candidateCount }} </span>-->
       </div>
       <div class="col-md-2 entries-status">
-        {{list.entries_status}}
+        <!--{{list.entries_status}}-->COMPLETED
       </div>
     </div>
     <div class="spacer10">&nbsp;</div><hr>

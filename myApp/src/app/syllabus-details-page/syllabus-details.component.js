@@ -6,19 +6,32 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var MyNewAppComponent = (function () {
-    function MyNewAppComponent() {
-        this.work = 'Bye Bye';
+var SyllabusDetailsComponent = (function () {
+    function SyllabusDetailsComponent(syllabusDetailsService) {
+        this.syllabusDetailsService = syllabusDetailsService;
+        this.syllabus_details = [];
+        this.syllabus_pdf = [];
     }
-    MyNewAppComponent.prototype.ngOnInit = function () {
+    SyllabusDetailsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.syllabusDetailsService.getSyllabus().subscribe(function (data) {
+            _this.syllabus_details = data.data.syllabus_details;
+            _this.syllabus_entries = data.data.syllabus_entries;
+        });
+        this.syllabusDetailsService.getSyllabusPDF().subscribe(function (data) {
+            _this.syllabus_pdf = data.data.syllabus_pdf;
+        });
+        this.syllabusDetailsService.getReleaseMaterial().subscribe(function (data) {
+            _this.syllabus_release_material = data.data.release_material;
+        });
     };
-    MyNewAppComponent = __decorate([
+    SyllabusDetailsComponent = __decorate([
         core_1.Component({
-            selector: 'app-my-new-app',
-            templateUrl: './my-new-app.component.html',
-            styleUrls: ['./my-new-app.component.css']
+            selector: 'app-syllabus-details',
+            templateUrl: 'syllabus-details.component.html',
+            styleUrls: ['syllabus-details.component.scss']
         })
-    ], MyNewAppComponent);
-    return MyNewAppComponent;
+    ], SyllabusDetailsComponent);
+    return SyllabusDetailsComponent;
 }());
-exports.MyNewAppComponent = MyNewAppComponent;
+exports.SyllabusDetailsComponent = SyllabusDetailsComponent;

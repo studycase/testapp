@@ -1,0 +1,135 @@
+{
+	"msgGetListEstimatedEntriesResponse": {
+		"centreNumber": "222",
+		"AwardingOrganisation": {
+			"awardingOrgReferenceId": "03",
+			"awardingOrgShortName": "CIE"
+		},
+		"AvailabilityWindow": {
+			"windowName": "March GQ Series 2017"
+		},
+		"ListEstimatedEntriesData": [{
+			"Product": {
+				"Achievable": {
+					"referenceId": "9704",
+					"name": " ART AND DESIGN"
+				},
+				"Option": [{
+					"EntryCombination": {
+						"entryCombinationCode": "A",
+						"entryCombinationName": "AS & A Level"
+					},
+					"candidateCount": "24"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "D",
+						"entryCombinationName": "AS & A Level"
+					},
+					"candidateCount": "405"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "E",
+						"entryCombinationName": "AS & A Level"
+					},
+					"candidateCount": "348"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "H",
+						"entryCombinationName": "AS & A Level"
+					},
+					"candidateCount": "234"
+				}]
+			}
+		}, {
+			"Product": {
+				"Achievable": {
+					"referenceId": "9791",
+					"name": "CHEMISTRY"
+				},
+				"Option": [{
+					"EntryCombination": {
+						"entryCombinationCode": "BX",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "453"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "CX",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "354"
+				}]
+			}
+		}, {
+			"Product": {
+				"Achievable": {
+					"referenceId": "0511",
+					"name": "ENGLISH AS A SECOND LANGUAGE (COUNT-IN SPEAKING)"
+				},
+				"Option": [{
+					"EntryCombination": {
+						"entryCombinationCode": "AX",
+						"entryCombinationName": "IGCSE"
+					},
+					"candidateCount": "245"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "BX",
+						"entryCombinationName": "IGCSE"
+					},
+					"candidateCount": "356"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "CX",
+						"entryCombinationName": "IGCSE"
+					},
+					"candidateCount": "654"
+				}]
+			}
+		}, {
+			"Product": {
+				"Achievable": {
+					"referenceId": "9769",
+					"name": "HISTORY"
+				},
+				"Option": [{
+					"EntryCombination": {
+						"entryCombinationCode": "AA",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "345"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "AB",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "234"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "BA",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "253"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "BB",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "436"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "BM",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "256"
+				}, {
+					"EntryCombination": {
+						"entryCombinationCode": "BN",
+						"entryCombinationName": "Pre-U Level 3"
+					},
+					"candidateCount": "345"
+				}]
+			}
+		}]
+	}
+}

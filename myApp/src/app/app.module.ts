@@ -22,13 +22,15 @@ import { SyllabusDetailsComponent } from './syllabus-details-page/syllabus-detai
 /* Import service dependencies */
 import { EstimatedEntriesService } from './estimated-entries-page/estimated-entries.service';
 import { SyllabusDetailsService } from './syllabus-details-page/syllabus-details.service';
+import { TestoComponent } from './testo/testo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     EstimatedEntriesComponent,
-    SyllabusDetailsComponent
+    SyllabusDetailsComponent,
+    TestoComponent
   ],
   imports: [
     BrowserModule,

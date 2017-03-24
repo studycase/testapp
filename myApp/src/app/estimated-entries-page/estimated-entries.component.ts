@@ -31,7 +31,10 @@ export class EstimatedEntriesComponent implements OnInit {
 
   ngOnInit() {
       this.estimatedEntriesService.getEntries().subscribe(data => {
-          this.entries = data.data.estimated_entries;
+        
+          //this.entries = data.data.estimated_entries;
+          this.entries = data.msgGetListEstimatedEntriesResponse.ListEstimatedEntriesData;
+          console.log(this.entries)
       });
   }
 }
